@@ -1,0 +1,1158 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/26/2022 9:14:17 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SERVIDOR01"
+  DTS:CreatorName="SERVIDOR01\epjua"
+  DTS:DTSID="{64AC30AE-A2DA-4528-BDC9-CC37940955B3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="ETLConsultas01"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{E49F973D-9933-45FD-AAAE-939E5EF3B5F3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Consultas01]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Consultas de Urgencias"
+      DTS:DTSID="{2F8A1824-E8A2-41F3-8656-273F0A6C2933}"
+      DTS:ObjectName="Consultas01">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\ETLDatosAbiertos\Consultas01\Consultas01.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Id"
+              DTS:DTSID="{69253D64-419D-4ABF-8147-70918029A26E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodigoUsuario"
+              DTS:DTSID="{4A5F6D17-33EE-43B0-A5FC-DC886E486967}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Departamento"
+              DTS:DTSID="{C05FDF43-AA86-40F2-9C03-FA85D349D002}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{DFD949DF-8803-4D21-9F9A-D3FBB916DF4A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaAtencion"
+              DTS:DTSID="{59CB8136-74CF-4DF4-ADE2-F8FD9C428E75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AñoAtencion"
+              DTS:DTSID="{7EFDEDD5-5E65-4BB1-BBF4-37D2EE496BE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MesAtencion"
+              DTS:DTSID="{B794F71B-DDEF-44A8-A84F-D735A42CE88E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreMes"
+              DTS:DTSID="{757B025E-B38A-4623-A3DD-6EAECD15C315}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sexo"
+              DTS:DTSID="{41202D1B-A961-44AF-BCCF-C3FACBA95A26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaNacimiento"
+              DTS:DTSID="{D9F86136-765F-4C81-9D28-D3F76E318C14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Edad"
+              DTS:DTSID="{9F9F76EA-29D0-46D8-B05F-93EED0321221}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnidadEdad"
+              DTS:DTSID="{E475342B-E277-4435-A7DE-E0AB7B216716}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodigoSupersalud"
+              DTS:DTSID="{001DDEC8-A48C-4B08-A52E-EEC7164D5DD0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreEntidad"
+              DTS:DTSID="{0CF9C2A0-81FE-455A-94BB-C3816EBCCBEF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Regimen"
+              DTS:DTSID="{A98AD5DA-A816-483B-BD7F-A0A3638C1C05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodigoCups"
+              DTS:DTSID="{7AC7EFFA-7927-4B08-913C-C1C4502152E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DescripcionCodigoCups"
+              DTS:DTSID="{103C6AEB-7A7A-4C45-9672-67CBD91D846A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ConceptoProduccion"
+              DTS:DTSID="{A7A70714-1890-4040-ACF6-C36978316A17}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task ETL Consultas01"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A89D3EAC-F4C8-41E8-AD50-9E73C8F7922D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task ETL Consultas01"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Datos Abiertos Consultas01"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [Id]
+      ,[CodigoUsuario]
+      ,[Departamento]
+      ,[Municipio]
+      ,CONVERT(varchar,[FechaAtencion],111) FechaAtencion
+      ,[AñoAtencion]
+      ,[MesAtencion]
+      ,[NombreMes]
+      ,[Sexo]
+      ,CONVERT(varchar,[FechaNacimiento],111) FechaNacimiento
+      ,[Edad]
+      ,[UnidadEdad]
+      ,[CodigoSupersalud]
+      ,[NombreEntidad]
+      ,[Regimen]
+      ,[CodigoCups]
+      ,[DescripcionCodigoCups]
+      ,[ConceptoProduccion]
+  FROM [dbo].[Consultas]
+  WHERE CodigoCups = '890701'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Connections[OleDbConnection]"
+                  connectionManagerID="{C8383E49-5134-477F-991A-96117A5C5442}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SERVIDOR01.DatosAbiertos]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoUsuario]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[CodigoUsuario]"
+                      length="60"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoUsuario]"
+                      name="CodigoUsuario"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Departamento]"
+                      length="50"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Departamento]"
+                      name="Departamento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Municipio]"
+                      length="50"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Municipio]"
+                      name="Municipio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[FechaAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[FechaAtencion]"
+                      length="30"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[FechaAtencion]"
+                      name="FechaAtencion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[AñoAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[AñoAtencion]"
+                      length="4"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[AñoAtencion]"
+                      name="AñoAtencion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[MesAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[MesAtencion]"
+                      length="2"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[MesAtencion]"
+                      name="MesAtencion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[NombreMes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[NombreMes]"
+                      length="60"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[NombreMes]"
+                      name="NombreMes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Sexo]"
+                      length="1"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Sexo]"
+                      name="Sexo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[FechaNacimiento]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[FechaNacimiento]"
+                      length="30"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[FechaNacimiento]"
+                      name="FechaNacimiento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Edad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Edad]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Edad]"
+                      name="Edad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[UnidadEdad]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[UnidadEdad]"
+                      length="60"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[UnidadEdad]"
+                      name="UnidadEdad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoSupersalud]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[CodigoSupersalud]"
+                      length="10"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoSupersalud]"
+                      name="CodigoSupersalud"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[NombreEntidad]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[NombreEntidad]"
+                      length="100"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[NombreEntidad]"
+                      name="NombreEntidad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Regimen]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Regimen]"
+                      length="100"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Regimen]"
+                      name="Regimen"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoCups]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[CodigoCups]"
+                      length="20"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoCups]"
+                      name="CodigoCups"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[DescripcionCodigoCups]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[DescripcionCodigoCups]"
+                      length="255"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[DescripcionCodigoCups]"
+                      name="DescripcionCodigoCups"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[ConceptoProduccion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[ConceptoProduccion]"
+                      length="255"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[ConceptoProduccion]"
+                      name="ConceptoProduccion"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[CodigoUsuario]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="CodigoUsuario" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Departamento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Municipio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[FechaAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="FechaAtencion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[AñoAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="AñoAtencion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[MesAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="MesAtencion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[NombreMes]"
+                      dataType="wstr"
+                      length="60"
+                      name="NombreMes" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[FechaNacimiento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="FechaNacimiento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Edad]"
+                      dataType="i4"
+                      name="Edad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[UnidadEdad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="UnidadEdad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[CodigoSupersalud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="CodigoSupersalud" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[NombreEntidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="NombreEntidad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[Regimen]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Regimen" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[CodigoCups]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="CodigoCups" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[DescripcionCodigoCups]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="DescripcionCodigoCups" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].ExternalColumns[ConceptoProduccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="ConceptoProduccion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[CodigoUsuario]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[CodigoUsuario]"
+                      name="CodigoUsuario" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Departamento]"
+                      name="Departamento" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Municipio]"
+                      name="Municipio" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[FechaAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[FechaAtencion]"
+                      name="FechaAtencion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[AñoAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[AñoAtencion]"
+                      name="AñoAtencion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[MesAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[MesAtencion]"
+                      name="MesAtencion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[NombreMes]"
+                      dataType="wstr"
+                      length="60"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[NombreMes]"
+                      name="NombreMes" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Sexo]"
+                      name="Sexo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[FechaNacimiento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[FechaNacimiento]"
+                      name="FechaNacimiento" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Edad]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Edad]"
+                      name="Edad" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[UnidadEdad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[UnidadEdad]"
+                      name="UnidadEdad" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[CodigoSupersalud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[CodigoSupersalud]"
+                      name="CodigoSupersalud" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[NombreEntidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[NombreEntidad]"
+                      name="NombreEntidad" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Regimen]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[Regimen]"
+                      name="Regimen" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[CodigoCups]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[CodigoCups]"
+                      name="CodigoCups" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[DescripcionCodigoCups]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[DescripcionCodigoCups]"
+                      name="DescripcionCodigoCups" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[ConceptoProduccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[ConceptoProduccion]"
+                      name="ConceptoProduccion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task ETL Consultas01\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="3082"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Consultas01]"
+                  connectionManagerRefId="Package.ConnectionManagers[Consultas01]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Id]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[CodigoUsuario]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="CodigoUsuario"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CodigoUsuario]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoUsuario]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[Departamento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Departamento"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Departamento]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Departamento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[Municipio]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Municipio"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Municipio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[FechaAtencion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="FechaAtencion"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FechaAtencion]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[FechaAtencion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[AñoAtencion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="AñoAtencion"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AñoAtencion]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[AñoAtencion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[MesAtencion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="MesAtencion"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MesAtencion]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[MesAtencion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[NombreMes]"
+                      cachedDataType="wstr"
+                      cachedLength="60"
+                      cachedName="NombreMes"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NombreMes]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[NombreMes]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[Sexo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Sexo"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Sexo]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Sexo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[FechaNacimiento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="FechaNacimiento"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FechaNacimiento]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[FechaNacimiento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[Edad]"
+                      cachedDataType="i4"
+                      cachedName="Edad"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Edad]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Edad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[UnidadEdad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="UnidadEdad"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UnidadEdad]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[UnidadEdad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[CodigoSupersalud]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="CodigoSupersalud"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CodigoSupersalud]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoSupersalud]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[NombreEntidad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="NombreEntidad"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NombreEntidad]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[NombreEntidad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[Regimen]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Regimen"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Regimen]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[Regimen]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[CodigoCups]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="CodigoCups"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CodigoCups]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[CodigoCups]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[DescripcionCodigoCups]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="DescripcionCodigoCups"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DescripcionCodigoCups]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[DescripcionCodigoCups]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].Columns[ConceptoProduccion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="ConceptoProduccion"
+                      externalMetadataColumnId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ConceptoProduccion]"
+                      lineageId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output].Columns[ConceptoProduccion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CodigoUsuario]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="CodigoUsuario" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Departamento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Municipio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FechaAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="FechaAtencion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AñoAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="AñoAtencion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MesAtencion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="MesAtencion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NombreMes]"
+                      dataType="wstr"
+                      length="60"
+                      name="NombreMes" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Sexo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FechaNacimiento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="FechaNacimiento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Edad]"
+                      dataType="i4"
+                      name="Edad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UnidadEdad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="UnidadEdad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CodigoSupersalud]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="CodigoSupersalud" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NombreEntidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="NombreEntidad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Regimen]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Regimen" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CodigoCups]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="CodigoCups" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DescripcionCodigoCups]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="DescripcionCodigoCups" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ConceptoProduccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="ConceptoProduccion" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task ETL Consultas01.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task ETL Consultas01\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar DataSync"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Tarea Ejecutar proceso DataSync Consultas01"
+      DTS:DTSID="{FCE4CF9F-89C6-4A89-B28F-C7BCE11A6E58}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar DataSync"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\Java\jre1.8.0_202\bin\java.exe"
+          Arguments="-jar DataSync-1.9.7-jar-with-dependencies.jar DataSyncConsutlas01.sij"
+          WorkingDirectory="D:\ETLDatosAbiertos" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{35287AB2-A3C1-443B-A67D-4934602AB42B}"
+      DTS:From="Package\Data Flow Task ETL Consultas01"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Tarea Ejecutar DataSync" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="242,42"
+          Id="Package\Data Flow Task ETL Consultas01"
+          TopLeft="248.5,103" />
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Tarea Ejecutar DataSync"
+          TopLeft="268.5,219" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="369.5,145">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,74"
+              Start="0,0"
+              End="0,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task ETL Consultas01">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="215,42"
+          Id="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01"
+          TopLeft="369,134" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Data Flow Task ETL Consultas01\Flat File Destination"
+          TopLeft="393,226" />
+        <EdgeLayout
+          Id="Package\Data Flow Task ETL Consultas01.Paths[OLE DB Source Output]"
+          TopLeft="478.75,176">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task ETL Consultas01\Datos Abiertos Consultas01">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
